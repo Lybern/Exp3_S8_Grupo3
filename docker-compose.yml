@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # -------------------------------------------------------------
   # 1. BROKER DE MENSAJERIA ACTIVEMQ (Persistencia de eventos JMS)
