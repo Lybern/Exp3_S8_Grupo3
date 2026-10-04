@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import cl.duoc.bancoxyz.core.model.Cuenta;
 import cl.duoc.bancoxyz.core.repository.BancoRepository;
-import cl.duoc.bancoxyz.core.security.ServiceTokenUtil;
 import cl.duoc.bancoxyz.core.service.BancoService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,9 +21,6 @@ class CoreServiceTests {
 
     @Autowired
     private BancoService bancoService;
-
-    @Autowired
-    private ServiceTokenUtil serviceTokenUtil;
 
     @Test
     @DisplayName("Carga de datos legacy inicializa al menos 50 cuentas bancarias")
