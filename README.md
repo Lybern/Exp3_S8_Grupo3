@@ -1,8 +1,8 @@
 # Banco XYZ - Arquitectura Cloud Resiliente, OAuth 2.0 (GitHub + JWT RSA), Docker y Orquestación con Spring Cloud
 
 ### Asignatura: Desarrollo Backend III (PBY2203)
-**Profesor:** Patricio Zepeda  
-**Estudiante:** Carolina Delgado Sapunar  
+**Profesor:** Marcelo Zepeda  
+**Estudiantes:** Leonardo Bustamante - Carolina Delgado 
 **Repositorio GitHub:** [https://github.com/Lybern/Exp3_S8_Grupo3](https://github.com/Lybern/Exp3_S8_Grupo3)  
 
 ---
