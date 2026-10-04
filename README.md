@@ -3,7 +3,6 @@
 ### Asignatura: Desarrollo Backend III (PBY2203)
 **Profesor:** Marcelo Zepeda  
 **Estudiantes:** Leonardo Bustamante - Carolina Delgado 
-**Repositorio GitHub:** [https://github.com/Lybern/Exp3_S8_Grupo3](https://github.com/Lybern/Exp3_S8_Grupo3)  
 
 ---
 
@@ -12,7 +11,7 @@
 El sistema distribuido del **Banco XYZ** implementa una arquitectura backend moderna, desacoplada y orientada a eventos, diseñada para entornos Cloud productivos, con altos estándares de seguridad y tolerancia a fallos.
 
 El ecosistema integra los siguientes componentes de ingeniería:
-* **Seguridad Federada con OAuth 2.0 y JWT:** El microservicio `auth-server` delega la autenticación de usuarios en GitHub como proveedor de identidad OAuth 2.0. Tras la autorización, emite tokens de acceso JSON Web Token (JWT) autofirmados con un par de claves asimétricas RSA (algoritmo RS256).
+* **Seguridad con OAuth 2.0 y JWT:** El microservicio `auth-server` delega la autenticación de usuarios en GitHub como proveedor de identidad OAuth 2.0. Tras la autorización, emite tokens de acceso JSON Web Token (JWT) autofirmados con un par de claves asimétricas RSA (algoritmo RS256).
 * **Servidor de Recursos (Resource Server):** El microservicio `core-service` valida de forma descentralizada las firmas de los tokens JWT entrantes mediante el endpoint público de claves `/.well-known/jwks.json` expuesto por `auth-server`, blindando las operaciones contables (retiros y transferencias).
 * **Mensajería Asíncrona (JMS):** Separación estricta entre productor (`core-service`) y consumidor asíncrono (`ms-mensajeria`) a través del broker de mensajería **Apache ActiveMQ Classic** sobre la cola persistente `transacciones.bancarias`.
 * **Tolerancia a Fallos (Resilience4j):** Protección en la publicación de eventos mediante patrones Circuit Breaker y Retry. Ante una eventual caída o degradación del broker, el sistema activa automáticamente un fallback de contingencia local sin interrumpir la operación bancaria del usuario.
