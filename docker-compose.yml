@@ -1,0 +1,11 @@
+services:
+  activemq:
+    image: apache/activemq-classic:latest
+    container_name: activemq
+    ports:
+      - "61616:61616" # Puerto binario TCP / OpenWire para Spring Boot (JmsTemplate y @JmsListener)
+      - "8161:8161"   # Consola Web de administracion (http://localhost:8161/admin, admin/admin)
+    environment:
+      - ACTIVEMQ_ADMIN_LOGIN=admin
+      - ACTIVEMQ_ADMIN_PASSWORD=admin
+    restart: unless-stopped
