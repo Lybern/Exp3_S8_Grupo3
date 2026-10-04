@@ -58,7 +58,7 @@ services:
       - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
       - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
       - SPRING_CONFIG_IMPORT=optional:configserver:http://admin:gato@config-server:8888
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://admin:eureka2026@discovery-server:8761/eureka/
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka:eureka2026@discovery-server:8761/eureka/
     networks:
       - banco-net
 

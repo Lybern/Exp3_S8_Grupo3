@@ -16,8 +16,8 @@ public class JwtTokenService {
 
     public JwtTokenService(
             JwtEncoder jwtEncoder,
-            @Value("${ms.auth.jwt.issuer}") String issuer,
-            @Value("${ms.auth.jwt.expiration-seconds}") long expirationSeconds) {
+            @Value("${ms.auth.jwt.issuer:http://localhost:8080}") String issuer,
+            @Value("${ms.auth.jwt.expiration-seconds:3600}") long expirationSeconds) {
 
         this.jwtEncoder = jwtEncoder;
         this.issuer = issuer;
