@@ -2,7 +2,7 @@
 
 ### Asignatura: Desarrollo Backend III (PBY2203)
 **Profesor:** Marcelo Zepeda  
-**Estudiantes:** Leonardo Bustamante - Carolina Delgado 
+**Estudiantes:** Carolina Delgado 
 
 ---
 
